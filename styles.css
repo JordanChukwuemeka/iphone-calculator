@@ -1,0 +1,88 @@
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calc {
+  background-color: black;     /* change background color */
+  border-radius: 45px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: right;
+  width: 420px;
+  user-select: none;
+}
+
+.output {
+  font-size: 64px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  font-size: 32px;
+  padding: 20px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.8s, color 0.8s;
+}
+
+button:hover {
+  background-color: #d0d0d0;
+  color: #000;
+}
+
+.equals-button {
+  grid-column: span 1;
+}
+
+.equals-button:hover {
+  background-color: #ff9000;
+}
+
+.equals-button, .operator-button {
+  background-color: #ff9000;
+}
+
+.operator-button:hover {
+  background-color: #ff9000;
+}
+
+.rectangular-button {
+  border-radius: 35px;
+  grid-column: span 2;
+  text-align: left;
+}
+
+button[data-action="clear"], button[data-action="toggle-sign"], button[data-action="percentage"] {
+  background-color: #9f9f9f;
+  color: #000;
+}
+
+button[data-action="divide"] {
+  background-color: #ff9000;
+}
+
+button[data-action="number"] {
+  background-color: #313131;
+}

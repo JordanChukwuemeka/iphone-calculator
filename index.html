@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calc">
+        <div class="output" id="input">0</div>
+        <div class="btn">
+            <button onclick="clearOutput()" data-action="clear">AC</button>
+            <button onclick="toggleSign()" data-action="toggle-sign">+/-</button>
+            <button onclick="appendToit('%')" data-action="percentage">%</button>
+            <button onclick="appendToit('/')" data-action="divide">/</button>
+
+            <!--Number Buttons-->
+
+            <button onclick="appendToit('7')" data-action="number">7</button>
+            <button onclick="appendToit('8')" data-action="number">8</button>
+            <button onclick="appendToit('9')" data-action="number">9</button>
+            <button onclick="appendToit('*')" class="operator-button">x</button>
+            <button onclick="appendToit('4')" data-action="number">4</button>
+            <button onclick="appendToit('5')" data-action="number">5</button>
+            <button onclick="appendToit('6')" data-action="number">6</button>
+            <button onclick="appendToit('-')" class="operator-button">-</button>
+            <button onclick="appendToit('1')" data-action="number">1</button>
+            <button onclick="appendToit('2')" data-action="number">2</button>
+            <button onclick="appendToit('3')" data-action="number">3</button>
+            <button onclick="appendToit('+')" class="operator-button">+</button>
+            <button onclick="appendToit('0')" class="double-button rectangular-button" data-action="number">0</button>
+            <button onclick="appendToit('.')" data-action="number">.</button>
+            <button onclick="calculate()" class="equals-button">=</button>
+
+            
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
